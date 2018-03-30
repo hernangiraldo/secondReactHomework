@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+.App__input {
+  border: 1px solid;
+  border-color: lightblue;
+  height: 40px;
+  width: 20%;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 1rem;
+  transition: border-color ease-in-out .3s;
+}
+.App__input:focus{
+  border-color: blue;
+  outline-offset: unset;
+  outline: none;
+}
