@@ -2,6 +2,13 @@ import React from 'react';
 
 const CharComponent = props => {
 
+  const style = {
+    display: 'inline-block',
+    padding: '16px',
+    margin: '16px',
+    border: '1px solid #eee',
+    textAlign: 'center'
+  }
   const lght = props.word ? props.word.length : 0;
   let letters = null;
 
@@ -10,7 +17,7 @@ const CharComponent = props => {
     
     letters = (
       tempWrd.map( ( l , index ) => {
-        return <p key={ index } onClick={ () => props.delete(index) } >{ l }</p>
+        return <p style={ style } key={ index } onClick={ () => props.delete(index) } >{ l }</p>
       })
     );
   }

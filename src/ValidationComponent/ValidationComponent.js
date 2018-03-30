@@ -6,7 +6,7 @@ const ValidationComponent = props => {
 
   return (
     <div>
-      {lbl}
+      { lbl }
     </div>
   )
 }
